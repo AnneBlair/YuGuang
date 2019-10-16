@@ -25,8 +25,8 @@ interests:
 - 产品设计与实现
 - 抄经典文言文
 
-education:
-  courses:
+education: 吉林大学
+  courses: 
   - course: 计算机科学与技术
     institution: 工学学士学位
     year: 2016
