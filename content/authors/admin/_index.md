@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: 尹玉广
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,32 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: iOS开发者
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: 博客
+  url: "https://juejin.im/user/57a1c42f2e958a0066731e8d/posts"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- 移动互联网领域
+- 产品设计与实现
+- 抄经典文言文
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: 计算机科学与技术
+    institution: 工学学士学位
+    year: 2016
+  # - course: MEng in Artificial Intelligence
+  #   institution: Massachusetts Institute of Technology
+  #   year: 2009
+  # - course: BSc in Artificial Intelligence
+  #   institution: Massachusetts Institute of Technology
+  #   year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -47,13 +47,13 @@ social:
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/291181204
+# - icon: google-scholar
+#   icon_pack: ai
+#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/AnneBlair
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -70,6 +70,8 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+尹玉广现在是一名iOS开发者。同时也不局限于iOS,对后台、前端、运维、产品、设计都有一些经验. 他将这些技术运用于创建应用程序和通用框架等解决方案。其个人代表作品[墨典单词](https://apps.apple.com/cn/app/墨典单词-高效学英语锁屏背单词的必备神器/id1373544809)深受英语学习者喜爱，并曾多次斩获教育付费排行榜第一。
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+在生活中也热爱旅游、阅读（尤其是古代文学)。他总是乐于尝试新鲜事物，并且持续地从这些新鲜事物中进行学习。
+
+现在，尹玉广是一名在法智金集团工作的高级软件工程师。
