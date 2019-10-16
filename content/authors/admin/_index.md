@@ -27,8 +27,8 @@ interests:
 
 education:
   courses: 
-  - course: 计算机科学与技术
-    institution: 工学学士学位吉林大学
+  - course: 计算机科学与技术·工学学士学位
+    institution: 吉林大学
     year: 2016
   # - course: MEng in Artificial Intelligence
   #   institution: Massachusetts Institute of Technology
