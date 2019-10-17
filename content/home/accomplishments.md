@@ -10,7 +10,7 @@ subtitle = "移动端APP产品讲解"
 
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "Jan 2006"
+date_format = "Jan 2004"
 
 # Accomplishments.
 #   Add/remove as many `[[item]]` blocks below as you like.
