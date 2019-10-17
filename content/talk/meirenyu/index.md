@@ -1,9 +1,9 @@
 ---
-title: Example Talk
-event: Academic Theme Conference
-event_url: https://example.org
+title: 合链科技区块链白皮书发布会
+event: 区块链白皮书
+event_url: https://finance.huanqiu.com/article/9CaKrnK3Ruk
 
-location: Source Themes HQ
+location: 北京微软大厦·故宫厅
 address:
   street: 450 Serra Mall
   city: Stanford
@@ -11,17 +11,17 @@ address:
   postcode: '94305'
   country: United States
 
-summary: An example talk using Academic's Markdown slides feature.
-abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam."
+summary: 合和共生 链接世界 合链科技区块链白皮书以及美人鱼平台系统发布会
+abstract: "负责发布会的Demo演示环节的产品; 主导整个产品及设计，发布会现场设备调试以及投屏，并解决突发状况"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
+date: "2017-07-01T00:00:00Z"
+date_end: "2017-07-01T20:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2017-07-01T00:00:00Z"
 
 authors: []
 tags: []
@@ -30,14 +30,14 @@ tags: []
 featured: false
 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: [**huanqiu**](https://himg2.huanqiucdn.cn/attachment2010/2017/0703/20170703065142171.jpg)'
   focal_point: Right
 
 links:
 - icon: twitter
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://twitter.com/291181204
 url_code: ""
 url_pdf: ""
 url_slides: ""
