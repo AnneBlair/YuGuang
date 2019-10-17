@@ -33,17 +33,6 @@ subtitle = ""
      name = "Other"
      tag = "slider"
 
-[item]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
-  url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
-  date_end = ""
-  description = ""
-  tags = "slider"
-
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
@@ -76,7 +65,7 @@ subtitle = ""
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-   text_color_light = true  
+  # text_color_light = true  
   
 [advanced]
  # Custom CSS. 
