@@ -3,10 +3,10 @@
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+weight = 30  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
-subtitle = ""
+title = "产品发布会"
+subtitle = "移动端APP产品讲解"
 
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format

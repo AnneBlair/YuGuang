@@ -1,5 +1,5 @@
 ---
-title: 墨录
+title: Li 言
 summary: 10000小时时间记录工具.
 tags:
 - personal
