@@ -1,8 +1,9 @@
 ---
 title: 墨典单词
-summary: 高效学英语锁屏背单词的必备神器.
-tags:
+summary: 多次斩获教育付费榜 No.1
+tags: 
 - personal
+- 个人
 date: "2019-10-17T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -11,6 +12,7 @@ external_link: "https://apps.apple.com/cn/app/%E5%A2%A8%E5%85%B8%E5%8D%95%E8%AF%
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
+  url: 
 
 links:
 - icon: twitter

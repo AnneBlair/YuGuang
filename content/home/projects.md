@@ -27,11 +27,11 @@ subtitle = ""
   
    [[content.filter_button]]
      name = "个人"
-     tag = "demo"
+     tag = "personal"
   
    [[content.filter_button]]
      name = "公司"
-     tag = "demo"
+     tag = "Deep Learning"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
