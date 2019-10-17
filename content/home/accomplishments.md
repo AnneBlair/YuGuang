@@ -3,14 +3,14 @@
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+weight = 70  # Order that this section will appear.
 
 title = "产品发布会"
 subtitle = "移动端APP产品讲解"
 
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "Jan 2004"
+
 
 # Accomplishments.
 #   Add/remove as many `[[item]]` blocks below as you like.
@@ -20,7 +20,7 @@ date_format = "Jan 2004"
 
 [[item]]
   organization = "Coursera"
-  organization_url = "https://www.coursera.org"
+  organization_url = "https://finance.huanqiu.com/article/9CaKrnK3Ruk"
   title = "Neural Networks and Deep Learning"
   url = ""
   certificate_url = "https://www.coursera.org"

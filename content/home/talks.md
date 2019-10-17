@@ -5,11 +5,11 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 70  # Order that this section will appear.
+weight = 30  # Order that this section will appear.
 
-title = "Recent & Upcoming Talks"
-subtitle = ""
-
+title = "产品发布会"
+subtitle = "移动端APP产品讲解"
+date_format = "Jan 2004"
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "talk"
