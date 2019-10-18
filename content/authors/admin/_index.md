@@ -18,7 +18,7 @@ organizations:
   url: "https://juejin.im/user/57a1c42f2e958a0066731e8d/posts"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
 - 移动互联网领域

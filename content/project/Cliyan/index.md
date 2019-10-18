@@ -1,6 +1,6 @@
 ---
 title: Li 言
-summary: “让时间留痕是Li言设计的初衷，这里可以记录生活的点点滴滴.
+summary: 让时间留痕是Li言设计的初衷，这里可以记录生活的点点滴滴.
 tags:
 - personal
 - 个人
