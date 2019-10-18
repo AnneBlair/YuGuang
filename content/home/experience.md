@@ -22,8 +22,8 @@ date_format = "Jan 2005"
   company = "法智金集团·小画智能"
   company_url = ""
   location = "北京"
-  <!-- date_start = "2017-11-03T12:00:00Z" -->
-  <!-- date_end = "" -->
+  date_start = "2017-11-03T12:00:00Z"
+  date_end = ""
   description = """
   主要职责:
   
@@ -37,8 +37,8 @@ date_format = "Jan 2005"
   company = "北京合链共赢科技有限公司"
   company_url = ""
   location = "北京"
-  <!-- date_start = "2016-07-07T12:00:00Z" -->
-  <!-- date_end = "2017-10-31T12:00:00Z" -->
+  date_start = "2016-07-07T12:00:00Z"
+  date_end = "2017-10-31T12:00:00Z"
   description = """
   主要职责:
 
