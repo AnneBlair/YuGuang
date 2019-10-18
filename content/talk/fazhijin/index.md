@@ -16,7 +16,7 @@ abstract: "负责发布会移动端项目介绍及现场演示；设计并实现
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2018-01-18T00:00:00Z"
+date: "2018-01-18T12:00:00Z"
 date_end: "2018-01-18T20:00:00Z"
 all_day: false
 
@@ -55,8 +55,8 @@ slides: example
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
-- internal-project
+# projects: 
+# - internal-project
 
 # Enable math on this page?
 math: true
