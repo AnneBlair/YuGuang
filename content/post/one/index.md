@@ -1,7 +1,7 @@
 ---
-title: 'Academic: the website builder for Hugo'
-subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
-summary: Create a beautifully simple website in under 10 minutes.
+title: 'Swift 部署智能合约'
+subtitle: '因为项目业务原因，需要在新的项目中部署以太坊的智能合约，关于这方面安卓方面貌似走在了前面。 web3j 的存在实在是喜人,而 iOS版本也是有的,功能貌似没有那么强大，对付平常的区块链交互是足够的了。但是iOS这个他没有仔细的说明，我研究了一下其实部署起来挺简单. 年纪大了搞过的东西很容易忘记，于是在这里记录一下.一来自己以后也可以回顾，二来为有需要的人略尽绵薄之' 
+summary: 
 authors:
 - admin
 tags:
@@ -31,74 +31,213 @@ image:
 projects: []
 ---
 
-**Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
+**因为项目业务原因，需要在新的项目中部署以太坊的智能合约，关于这方面安卓方面貌似走在了前面。 [web3j](https://github.com/web3j/web3j) 的存在实在是喜人,而 iOS版本也是有的,功能貌似没有那么强大，对付平常的区块链交互是足够的了。但是iOS这个他没有仔细的说明，我研究了一下其实部署起来挺简单. 年纪大了搞过的东西很容易忘记，于是在这里记录一下.一来自己以后也可以回顾，二来为有需要的人略尽绵薄之力**
 
-[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
+## 使用 [web3swift](https://github.com/BANKEX/web3swift) 部署以太坊智能合约
 
-- 👉 [**Get Started**](#install)
-- 📚 [View the **documentation**](https://sourcethemes.com/academic/docs/)
-- 💬 [**Ask a question** on the forum](https://discourse.gohugo.io)
-- 👥 [Chat with the **community**](https://spectrum.chat/academic)
-- 🐦 Twitter: [@source_themes](https://twitter.com/source_themes) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithAcademic](https://twitter.com/search?q=%23MadeWithAcademic&src=typd)
-- 💡 [Request a **feature** or report a **bug**](https://github.com/gcushen/hugo-academic/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- :heart: **Support development** of Academic:
-  - ☕️ [**Donate a coffee**](https://paypal.me/cushen)
-  - 💵 [Become a backer on **Patreon**](https://www.patreon.com/cushen)
-  - 🖼️ [Decorate your laptop or journal with an Academic **sticker**](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - 👕 [Wear the **T-shirt**](https://academic.threadless.com/)
-  - :woman_technologist: [**Contribute**](https://sourcethemes.com/academic/docs/contribute/)
+### 1.配置服务
+#### a. IP地址
+配置以太坊的服务器地址：
+我这里是本地IP地址
 
-{{< figure src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" title="Academic is mobile first with a responsive design to ensure that your site looks stunning on every device." >}}
+```
+struct Api {
 
-**Key features:**
+    static let host = "http://192.168.6.66:6666"
+    
+    static func map(path: String) -> String {
+        
+        return host + path
+    }
+    
+    static var chainUrl: String {
+        return map(path: "")
+    }
+}
+```
+#### b. abiString
+部署合约会需要
 
-- **Page builder** - Create *anything* with [**widgets**](https://sourcethemes.com/academic/docs/page-builder/) and [**elements**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://sourcethemes.com/academic/docs/writing-markdown-latex/), [**Jupyter**](https://sourcethemes.com/academic/docs/jupyter/), or [**RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://sourcethemes.com/academic/themes/)
-- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 15+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
+```
+public let abiString = "[{\"constant\":true,\"inputs\":[],\"name\":\"getFlagData\",\"outputs\":[{\"name\":\"data\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"data\",\"type\":\"string\"}],\"name\":\"setFlagData\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]"
+```
 
-## Themes
+#### c. byteCode
+这个是一串很长的东西，合约生产的。没有的记得找写合约的要.
 
-Academic comes with **automatic day (light) and night (dark) mode** built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action! Day/night mode can also be disabled by the site admin in `params.toml`.
+我这里的例子：
 
-[Choose a stunning **theme** and **font**](https://sourcethemes.com/academic/themes/) for your site. Themes are fully [customizable](https://sourcethemes.com/academic/docs/customization/#custom-theme).
+```
+public let BINARY = "606060409081526003805460a060020a61ffff021916905560006004558051908101604052600981527f4c696e67546f6b656e0000000000000000000000000000000000000000000000602082015260059080516100619291602001906100cf565b5060408051908101604052600481527f4c494e4700000000000000000000000000000000000000000000000000000000602082015260069080516100a99291602001906100cf565b50601260075560038054600160a060020a03191633600160a060020a031617905561016a565b82805460018160011615610100020316600290049若干省略号
+```
 
-## Ecosystem
+#### d. 集成 pod
 
-* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
 
-## Install
+```
+pod 'web3swift', '~> 0.8.0'
+```
 
-You can choose from one of the following four methods to install:
 
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
+### 2.部署前奏
 
-Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
+#### a. 创建账户，**web3swift** 的示例中有，同学可以仔细研究研究，我这里就简单过。
+上代码：
 
-## Updating
+```
+class YYGKey {
+    
+    var key_password = "BANKEXFOUNDATION"
+    
+    var storeManager: KeystoreManager? {
+        return keyStoreManager()
+    }
+    
+    var keyAddress: EthereumKeystoreV3? {
+        return addressManage()
+    }
+    
+    convenience init(password: String) {
+        self.init()
+        self.key_password = password
+    }
 
-[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
+    
+    func addressManage() -> EthereumKeystoreV3? {
+        guard let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return nil }
+        let storeManager = KeystoreManager.managerForPath(userDir + "/keystore")
+        if let manage = storeManager, let address = manage.addresses {
+            return address.isEmpty ? creatAddress(dir: userDir) : getAddress(manage: manage)
+        }
+        return nil
+    }
+    
+    func creatAddress(dir: String) -> EthereumKeystoreV3? {
+        let ks = try! EthereumKeystoreV3(password: "BANKEXFOUNDATION")
+        if let ks_ = ks {
+            let keydata = try! JSONEncoder().encode(ks_.keystoreParams)
+            FileManager.default.createFile(atPath: dir + "/keystore"+"/key.json", contents: keydata, attributes: nil)
+        }
+        return ks
+    }
+    
+    func getAddress(manage: KeystoreManager) -> EthereumKeystoreV3? {
+        if let address = manage.addresses, let first = address.first {
+            return manage.walletForAddress(first) as? EthereumKeystoreV3
+        }
+        return nil
+    }
+    
+    func keyStoreManager() -> KeystoreManager? {
+        guard let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return nil }
+        return KeystoreManager.managerForPath(userDir + "/keystore")
+    }
+}
+```
 
-Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academic/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
+b. 连接到部署的服务器
 
-## License
+```
+class YYG {
+    
+    var chain: web3? {
+        guard let url = URL(string: Api.chainUrl), let web = Web3.new(url) else { return nil }
+        return web
+    }
+    
+    static let yyg = YYG()
+    
+    private init() { }
+}
+```
 
-Copyright 2016-present [George Cushen](https://georgecushen.com).
+### 3.开始部署
 
-Released under the [MIT](https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md) license.
+**需要的数据**
+
+* EthereumKeystoreV3
+* EthereumAddress
+* web3
+* byteCode
+* web3contract
+* Web3Options
+* TransactionIntermediate
+* KeystoreManager
+
+上代码：
+
+```
+struct YYGOperate {
+    
+    typealias result = Result<[String : String], Web3Error>
+    typealias res = [String : String]
+    
+    func contractsResult(message: @escaping (Bool,res?) -> Void) {
+        if let resul = smartContracts() {
+            switch resul {
+            case .success(let res):
+                DispatchQueue.main.async {
+                    message(true, res)
+                }
+            case .failure(let error):
+                message(false, nil)
+                print(error)
+            }
+        } else {
+            message(false, nil)
+        }
+    }
+    
+    private func smartContracts() -> result? {
+        guard let manage = YYGKey().addressManage(),let addresss = manage.addresses,let address = addresss.first, let chain = YYG.yyg.chain else { return nil }
+        chain.provider.network = nil
+        chain.addKeystoreManager(YYGKey().keyStoreManager())
+        
+        guard let contract = chain.contract(abiString, at: nil, abiVersion: 2), let byteCode = Data.fromHex(BINARY) else { return nil }
+        var options = Web3Options.defaultOptions()
+        options.from = address
+        options.gasLimit = BigUInt(3000000)
+        let inter = contract.deploy(bytecode: byteCode, options: options)
+        guard let intermediate = inter else { return nil }
+        return intermediate.send(password: "BANKEXFOUNDATION", options: options)
+    }
+}
+```
+
+### 3.执行
+
+```
+YYGOperate().contractsResult { state, res in
+    if state { printLogDebug(res) }
+}
+```
+
+结果：
+
+```
+Transaction
+Nonce: 10
+Gas price: 5000000000
+Gas limit: 1111340
+To: 0x
+Value: 0
+Data: 0x606060409081526003805460a060020a61ffff02191690556090810183818151815260200191508051906020019080838360005b8381101561017657808201518382015260200161015e565b50、5260200160405180910390a35050505050565b6000828201610acc82fd76404b5c55184a2e555312d3353bcb43e75666dd36d0af562b0c220029a165627a7a72305820f3efa245dad6ee48cc6d771a54067fb6e3b17b0caba5ecd4eed13aca2b1c00960029
+v: 28
+r: 79879464740714101996923170089344479265591202785750775462035438111705924396692
+s: 39143622105442894879914151031821436277241889279036648521816051027427579390397
+Intrinsic chainID: nil
+Infered chainID: nil
+sender: Optional("0x9E40Fb081777c232aBafc256165772572c057F95")
+hash: Optional("0xcc16c3a245e4fd27b85e53b8cb6d0ac64028b60e61ca3de938e896e95202bde3")
+
+```
+
+### 授人以鱼不如授人以渔 
+**学习资料**
+
+* [以太坊智能合约](https://github.com/nebulasio/wiki/blob/master/tutorials/%5B中文%5D%20Nebulas%20101%20-%2003%20编写智能合约.md)
+* [web3swift](https://github.com/BANKEX/web3swift)
+* [以太坊](https://github.com/ethereum/go-ethereum)
+* [以太坊官方文档](https://github.com/ethereum/go-ethereum/wiki/Management-APIs)
+* [安卓web3j](web3j)
+* [学习区块链全部资料](https://github.com/chaozh/awesome-blockchain-cn)
