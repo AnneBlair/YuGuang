@@ -39,11 +39,11 @@ date_format = "Jan 2005"
   location = "北京"
   date_start = "2016-07-07"
   date_end = "2017-10-31"
-  description = ""
+  description = """
   主要职责:
 
   * iOS 应用开发
   * iOS端技术负责人
   * 移动端技术面试
-
+  """
 +++
