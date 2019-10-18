@@ -1,27 +1,27 @@
 ---
-title: 合链科技区块链白皮书发布会
-event: 区块链白皮书
-event_url: https://finance.huanqiu.com/article/9CaKrnK3Ruk
+title: 法智金集团产品发布会
+event: 知识产权
+event_url: http://mini.eastday.com/mobile/180124051631765.html#
 
-location: 北京微软大厦·故宫厅
+location: 金融街·丽思卡尔顿酒店
 address:
-  street: 丹棱街5号
+  street: 金融街金城坊东街1号
   city: 北京
-  region: 海淀区
-  postcode: '100080'
+  region: 西城区
+  postcode: '100033'
   country: 中国
 
 summary: 移动端产品演示
-abstract: "主导整个产品及设计,负责发布会的Demo演示环节产品; 负责整个发布会现场设备调试以及投屏, 并解决突发状况"
+abstract: "负责发布会移动端项目介绍及现场演示；设计并实现产品"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2017-07-01T00:00:00Z"
-date_end: "2017-07-01T20:00:00Z"
+date: "2018-01-18T00:00:00Z"
+date_end: "2018-01-18T20:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2017-07-01T00:00:00Z"
+publishDate: "2018-01-18T00:00:00Z"
 
 authors: []
 tags: []
@@ -30,7 +30,7 @@ tags: []
 featured: false
 
 image:
-  caption: 'Image credit: [**huanqiu**](https://himg2.huanqiucdn.cn/attachment2010/2017/0703/20170703065142171.jpg)'
+  caption: 'Image credit: [**huanqiu**](http://www.iprdaily.cn/img/images/201801/1516669518632838.jpg)'
   focal_point: Right
 
 links:
