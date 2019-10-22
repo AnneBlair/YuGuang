@@ -90,7 +90,7 @@ phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "雍和家园", city = "北京", region = "东城区", postcode = "100013", country = "中国", country_code = "zh"}
+# address = {street = "雍和家园", city = "北京", region = "东城区", postcode = "100013", country = "中国", country_code = "zh"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
