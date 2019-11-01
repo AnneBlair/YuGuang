@@ -31,7 +31,6 @@ image:
 projects: []
 ---
 
-# SwiftUI 使用 UIKit 作为UI控件不足的补充
 本文主要目的就是解决目前 **SwiftUI** 中 **TextView** 的不足.
 `SwiftUI` 在 `Xcode` **Version 11.1** 中的 `TextView` 依然有许多问题, 文本在视图内部无法正确显示是使用的当务之急，目前的解决办法是利用 `UITextView`进行  **“ 曲线救国 ”**
 
@@ -113,7 +112,7 @@ projects: []
 
 在 `Make View` 和 `Update View` 中我们传入 `Representable Context`参数，由于 `Representable Context` 的三个属性: `Coordinator` `Environment` `Transaction`
 
-如果要使用 `Coordinator`，则需要在可选的 `Make Coordinator` 方法中创建，在初始化过程中首先调用的是 `Make Coordinator`方法, 我们把 **UIKit**相关的动作事件或者委托在 `Make Coordinator`中处理好,这样关于 **UIKit** 相关的 **动作事件或者委托**的就可以传递到 SwiftUI 里面了;
+如果要使用 `Coordinator`，则需要在可选的 `Make Coordinator` 方法中创建，在初始化过程中首先调用的是 `Make Coordinator`方法, 我们把 **UIKit**相关的动作事件或者委托在 `Make Coordinator`中处理好,这样关于 **UIKit** 相关的 **动作事件或者委托**的就可以传递到 **SwiftUI** 里面了;
 
 **我们看例子：**
 
@@ -132,7 +131,6 @@ struct TextView: UIViewRepresentable {
         }
 
         func textViewDidChange(_ textView: UITextView) {
-            print("text now: \(String(describing: textView.text!))")
             self.textView.text = textView.text
         }
     }
@@ -158,18 +156,20 @@ struct TextView: UIViewRepresentable {
 }
 ```
 
-1.先调用 `makeCoordinator` 创建 `UIViewRepresentableContext`用于处理 `UIKit` 中的动作事件或者委托；
+1. 先调用 `makeCoordinator` 创建 `UIViewRepresentableContext`用于处理 `UIKit` 中的动作事件或者委托；
+
 2. `makeUIView` 中添加动作事件或者委托的目标  `textView.delegate = context.coordinator`
 
 ### 四. 最后
 关于如何在SwiftUI中打造使用 UITextView上面已经很详细，更多的自定义处理需要根据需求进一个扩展；但是核心点就是两点的使用：
 
 **1. UIViewRepresentable**
+
 **2. UIViewRepresentableContext**
 
 -------
 
 
-本文在苹果开发者官网教程中有 **SwiftUI** 直接使用 **UIKit** 英文[教程](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit)
+本文在苹果开发者官网教程中有 **SwiftUI** 直接使用 **UIKit** 英文[教程](https://developer.apple.com/videos/play/wwdc2019/231/?time=725)
 
 
