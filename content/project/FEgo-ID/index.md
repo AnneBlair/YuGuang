@@ -1,9 +1,9 @@
 ---
 title: ego ID
-summary: 基于区块链技术的数字身份Dapp.
+summary: 一款基于区块链技术的数字身份Dapp.
 tags:
 - Deep Learning
-date: "2019-10-09T00:00:00Z"
+date: "2020-02-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://apps.apple.com/cn/app/id1435126142"
