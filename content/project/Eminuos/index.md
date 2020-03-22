@@ -1,12 +1,12 @@
 ---
-title: 微积分Vekfen
-summary: 基于区块链技术重构版权社区生态体系.
+title: Minuos
+summary: 一款通过区块链记录用户文本内容的Dapp.
 tags:
 - Deep Learning
 date: "2019-10-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://apps.apple.com/cn/app/id1474969115"
+external_link: "https://apps.apple.com/cn/app/id1439044163"
 
 image:
   caption: Photo by rawpixel on Unsplash
