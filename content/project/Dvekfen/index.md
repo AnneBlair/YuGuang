@@ -1,13 +1,12 @@
 ---
-title: Li 言
-summary: 让时间留痕是Li言设计的初衷，这里可以记录生活的点点滴滴.
+title: 微积分Vekfen
+summary: 基于区块链技术重构版权社区生态体系.
 tags:
-- personal
-- 个人
+- Deep Learning
 date: "2019-10-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://apps.apple.com/cn/app/id1441515283"
+external_link: "https://apps.apple.com/us/app/li-%E8%A8%80/id1441515283"
 
 image:
   caption: Photo by rawpixel on Unsplash

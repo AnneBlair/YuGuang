@@ -7,7 +7,7 @@ tags:
 date: "2019-10-11T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://apps.apple.com/us/app/墨录/id1293669013"
+external_link: "https://apps.apple.com/cn/app/id1293669013"
 
 image:
   caption: Photo by rawpixel on Unsplash
