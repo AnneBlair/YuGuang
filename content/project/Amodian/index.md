@@ -1,10 +1,10 @@
 ---
 title: 墨典单词
-summary: 一款利用人工智能并结合艾宾浩斯遗忘曲线进行记忆单词的iOS应用.
+summary: 利用人工智能并结合艾宾浩斯遗忘曲线进行单词记忆.
 tags: 
 - personal
 - 个人
-date: "2019-10-16T00:00:00Z"
+date: "2017-12-16T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://apps.apple.com/cn/app/%E5%A2%A8%E5%85%B8%E5%8D%95%E8%AF%8D-%E9%AB%98%E6%95%88%E5%AD%A6%E8%8B%B1%E8%AF%AD%E9%94%81%E5%B1%8F%E8%83%8C%E5%8D%95%E8%AF%8D%E7%9A%84%E5%BF%85%E5%A4%87%E7%A5%9E%E5%99%A8/id1373544809"
