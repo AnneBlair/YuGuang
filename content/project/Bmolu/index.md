@@ -4,7 +4,7 @@ summary: 由10000小时理论有感而发，用来记录对某一件事持之以
 tags:
 - personal
 - 个人
-date: "2019-10-11T00:00:00Z"
+date: "2017-06-11T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://apps.apple.com/cn/app/id1293669013"
