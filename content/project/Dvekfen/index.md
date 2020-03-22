@@ -3,7 +3,7 @@ title: 微积分Vekfen
 summary: 基于区块链技术重构版权社区生态体系.
 tags:
 - Deep Learning
-date: "2019-10-09T00:00:00Z"
+date: "2020-03-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://apps.apple.com/cn/app/id1474969115"
