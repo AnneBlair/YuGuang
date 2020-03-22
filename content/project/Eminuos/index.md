@@ -3,7 +3,7 @@ title: Minuos
 summary: 一款通过区块链记录用户文本内容的Dapp.
 tags:
 - Deep Learning
-date: "2019-10-09T00:00:00Z"
+date: "2020-02-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://apps.apple.com/cn/app/id1439044163"
