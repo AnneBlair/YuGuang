@@ -1,6 +1,6 @@
 ---
 title: 墨典单词
-summary: 利用人工智能并结合艾宾浩斯遗忘曲线进行单词记忆.
+summary: 利用人工智能并结合艾宾浩斯遗忘曲线进行单词记忆的App.
 tags: 
 - personal
 - 个人
