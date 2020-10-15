@@ -32,6 +32,7 @@ projects: []
 ---
 
 # GCD 的常规用法与底层原理
+
 以一种非常简洁的记述方法，实现了极为复杂繁琐的多线程编程.
 
 只需要定义想执行的任务并追加到适当的 Dispatch Queue 中，GCD 就能生成必要的线程并执行任务。由于线程管理是作为系统的一部分来实现的，因此可统一管理，也可以执行任务，直接通过 XNU 内核交互，这样就比其它线程更快.
@@ -448,6 +449,22 @@ num:1 thread: <NSThread: 0x600001fa81c0>{number = 3, name = (null)}
 3. dispatch_io_read 函数使用 Global 进行并列读取
 4. 读取后将每次的data 传递给指定的回调 block. 
 5. 回调用的 Block 分析传递过来的 Dispatch Data 进行结合处理.
+
+### 3.10 DispatchWorkItem
+实现可以取消的 Block
+
+```
+        let block: DispatchWorkItem = DispatchWorkItem {
+            print("come")
+            sleep(5)
+            print("this is block")
+        }
+        /// 只能取消还未执行的，不能需要正在执行的或者已经执行的
+        let queue = DispatchQueue(label: "this is block cancel")
+        queue.async(execute: block)
+        sleep(2)
+        block.cancel()
+```
 
 
 ## GCD 的底层实现
