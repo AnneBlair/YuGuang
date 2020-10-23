@@ -1,5 +1,5 @@
 ---
-title: 'OC 知识回顾'
+title: 'OC 知识'
 subtitle: '' 
 summary: 
 authors:
@@ -8,8 +8,8 @@ tags:
 - Academic
 categories:
 - 
-date: "2020-10-24T00:00:00Z"
-lastmod: "2020-10-24T00:00:00Z"
+date: "2020-10-14T00:00:00Z"
+lastmod: "2020-10-14T00:00:00Z"
 featured: false
 draft: false
 
@@ -31,8 +31,7 @@ image:
 projects: []
 ---
 
-
-# OC 知识
+# OC知识
 
 ## 1. 分类
 ### 1.1. 你用分类都做了哪些事情？
