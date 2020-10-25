@@ -2,7 +2,7 @@
 title: 'RunTime 基础知识'
 subtitle: 'RunTime 基础知识' 
 summary: 
-authors:
+authors: '尹玉广'
 - admin
 tags:
 - Academic
