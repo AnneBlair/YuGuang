@@ -23,7 +23,6 @@ bio:
 interests:
 - 移动互联网领域
 - 产品设计与实现
-- 抄经典文言文
 
 education:
   courses: 
