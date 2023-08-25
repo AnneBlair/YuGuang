@@ -17,13 +17,27 @@ date_format = "January 2, 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+title = "iOS软件开发"
+company = "陌陌"
+company_url = ""
+location = "北京"
+date_start = "2020-11-00T12:00:00Z"
+date_end = ""
+description = """
+主要职责:
+
+* iOS 应用开发
+  """
+
 [[experience]]
   title = "iOS软件开发"
   company = "法智金集团·小画智能"
   company_url = ""
   location = "北京"
   date_start = "2017-11-03T12:00:00Z"
-  date_end = ""
+  date_end = "2020-10-03T12:00:00Z"
   description = """
   主要职责:
   
